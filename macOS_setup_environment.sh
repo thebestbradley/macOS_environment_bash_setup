@@ -48,6 +48,14 @@ else
     echo "SVN is already installed."
 fi
 
+# install coldfusion if not already installed
+if ! command -v coldfusion &> /dev/null; then
+    echo "Installing ColdFusion..."
+    brew install coldfusion || error_exit "Failed to install ColdFusion."
+else
+    echo "ColdFusion is already installed."
+fi
+
 # Install MySQL if not already installed
 if ! command -v mysql &> /dev/null; then
     echo "Installing MySQL..."
