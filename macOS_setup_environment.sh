@@ -50,10 +50,10 @@ fi
 
 # install coldfusion if not already installed
 if ! command -v coldfusion &> /dev/null; then
-    echo "Installing ColdFusion..."
-    brew install coldfusion || error_exit "Failed to install ColdFusion."
+    echo "Installing Adobe ColdFusion..."
+    brew install coldfusion || error_exit "Failed to install Adobe ColdFusion."
 else
-    echo "ColdFusion is already installed."
+    echo "Adobe ColdFusion is already installed."
 fi
 
 # Install MySQL if not already installed
