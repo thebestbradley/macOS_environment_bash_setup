@@ -320,6 +320,8 @@ else
 fi
 
 # Define paths for Homebrew Apache
+
+# Example paths this would need to be updated to reflect your system
 SITES_PATH="$HOME/Documents/Sites"
 APACHE_DOC_ROOT="/opt/homebrew/var/www"
 HTTPD_CONF="/opt/homebrew/etc/httpd/httpd.conf"
